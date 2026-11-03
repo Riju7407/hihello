@@ -5,21 +5,21 @@ import { ArrowRight } from "lucide-react";
 
 export default function HeroBanner() {
   return (
-    <section className="relative overflow-hidden min-h-[520px] lg:min-h-[580px] flex items-center">
+    <section className="relative overflow-hidden min-h-[520px] lg:min-h-[580px] flex items-center isolate">
       {/* Official Holstein Hero Panorama Image */}
       <Image
         src="/hb1.png"
         alt="Holstein India - Advancing Dairy, Empowering Farmers"
         fill
         priority
-        className="object-cover object-center -z-10"
+        className="object-cover object-center"
         sizes="100vw"
       />
 
       {/* Elegant dark gradient overlay for crystal-clear text readability */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#1A1308]/90 via-[#2A1E0D]/65 to-black/25 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/50 to-black/20" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 w-full">
         <div className="max-w-2xl text-white space-y-6">
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-black/30 backdrop-blur-xs border border-white/20 text-xs font-semibold tracking-wide uppercase text-brand-border">
             <span>MMC Group Sister Concern</span>

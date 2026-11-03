@@ -14,19 +14,20 @@ export default function AboutPage() {
   return (
     <div className="bg-white">
       {/* 1. Hero Header Banner matching h2.jpeg & ab3.png */}
-      <div className="relative text-white min-h-[340px] sm:min-h-[380px] flex items-center overflow-hidden">
+      <div className="relative text-white min-h-[380px] sm:min-h-[440px] flex items-center overflow-hidden isolate">
+        {/* ab3.png hero banner image */}
         <Image
           src="/ab3.png"
           alt="About Holstein India - Genetics, Technology, Animal Nutrition"
           fill
           priority
-          className="object-cover object-center -z-10"
+          className="object-cover object-center"
           sizes="100vw"
         />
-        {/* Contrast overlay for crisp text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1A1308]/90 via-[#2A1E0D]/70 to-black/30 -z-10" />
+        {/* Elegant soft contrast overlay to ensure text readability while keeping ab3.png clearly visible */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/20" />
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 w-full space-y-3">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 w-full space-y-3">
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-black/40 backdrop-blur-xs border border-white/20 text-xs font-semibold tracking-wide uppercase text-brand-border">
             <span>MMC Group Sister Concern</span>
             <span>•</span>
